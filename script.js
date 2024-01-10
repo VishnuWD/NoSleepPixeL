@@ -1,6 +1,7 @@
 const loader = document.getElementById("loader")
+const body = document.querySelector("body")
 
-window.addEventListener("load", function(){
+body.addEventListener("load", function(){
     loader.style.display ="none"
 })
 
@@ -39,7 +40,7 @@ document.addEventListener("mousemove",function(dets){
     crsr.style.top = dets.y + "px"
 })
 
-gsap.from(".page1 h1,.page1 h2", {
+gsap.from(".page1 .bigh1,.page1 .bigh2", {
     y: 10,
     rotate: 10,
     opacity: 0,
@@ -48,7 +49,7 @@ gsap.from(".page1 h1,.page1 h2", {
 })
 var tl = gsap.timeline({
     scrollTrigger: {
-        trigger: ".page1 h1",
+        trigger: ".page1 .bigh1",
         scroller: ".main",
         // markers:true,
         start: "top 27%",
@@ -56,10 +57,10 @@ var tl = gsap.timeline({
         scrub: 3
     }
 })
-tl.to(".page1 h1", {
+tl.to(".page1 .bigh1", {
     x: -100,
 }, "anim")
-tl.to(".page1 h2", {
+tl.to(".page1 .bigh2", {
     x: 100
 }, "anim")
 tl.to(".page1 video", {
@@ -68,7 +69,7 @@ tl.to(".page1 video", {
 
 var tl2 = gsap.timeline({
     scrollTrigger: {
-        trigger: ".page1 h1",
+        trigger: ".page1 .bigh1",
         scroller: ".main",
         // markers:true,
         start: "top -115%",
@@ -76,13 +77,65 @@ var tl2 = gsap.timeline({
         scrub: 3
     }
 })
+
+// small screen h1
+gsap.from(".page1 .smallh1,.page1 .smallh2", {
+    y: 10,
+    rotate: 10,
+    opacity: 0,
+    delay: 0.3,
+    duration: 0.7
+})
+var tlone = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page1 .smallh1",
+        scroller: ".main",
+        // markers:true,
+        start: "top 27%",
+        end: "top -100%",
+        scrub: 3
+    }
+})
+tlone.to(".page1 .smallh1", {
+    x: -100,
+}, "anim")
+tlone.to(".page1 .smallh2", {
+    x: 100
+}, "anim")
+tlone.to(".page1 video", {
+    width: "90%"
+}, "anim")
+
+var tltwo = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page1 .smallh1",
+        scroller: ".main",
+        // markers:true,
+        start: "top -115%",
+        end: "top -120%",
+        scrub: 3
+    }
+})
+var tlthree = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".page1 h1",
+        scroller: ".main",
+        // markers:true,
+        start: "top -280%",
+        end: "top -300%",
+        scrub: 3
+    }
+})
+// end small screen h1
+
+
 tl2.to(".main", {
     backgroundColor: "#fff",
 })
 
 var tl3 = gsap.timeline({
     scrollTrigger: {
-        trigger: ".page1 h1",
+        trigger: ".page1 .h1",
         scroller: ".main",
         // markers:true,
         start: "top -280%",
