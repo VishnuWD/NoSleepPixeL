@@ -1,7 +1,7 @@
-const loader = document.getElementById("loader")
+const loader = document.querySelector(".loader__container")
 const body = document.querySelector("body")
 
-body.addEventListener("load", function(){
+window.addEventListener("load", function(){
     loader.style.display ="none"
 })
 
