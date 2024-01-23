@@ -19,6 +19,10 @@ html, body {
 }
 .loader__container{
     background-color: #0F0D0D;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
 }
 .loader {
     position: absolute;
@@ -156,7 +160,7 @@ html, body {
 .main{
     background-color: #0F0D0D;
     cursor: none;
-    /* overflow: visible; */
+    overflow: hidden;
 }
 
 .page1{
@@ -218,16 +222,19 @@ html, body {
     font-size: 15vmin;
     font-weight: 300;
     font-family: "PP mori";
-
-    margin-left: 6vw;
+display: flex;
+justify-content: start;
+width: 100vw;
+    padding-left: 6vw;
     transform-origin: left;
 }
 .page1 h2{
     font-size: 15vmin;
     font-weight: 300;
     transform-origin: left;
-
-    margin-left: 26vw;
+    position: relative;
+    left: 32%;
+    padding-top: 3vmin;
 }
 
 .page1 video{
@@ -238,12 +245,6 @@ html, body {
     transform: translate(-50%,0);
 }
 @media (min-width: 768px ){
-    .smallh1{
-        display: none;
-    }
-    .smallh2{
-        display: none;
-    }
     .smallvideo{
         display: none;
     }
@@ -318,7 +319,7 @@ gap: 3vmin;
 .page3{
     min-height: 100vh;
     width: 100%;
-    padding-top: 7vh;
+    padding: 10vmin 0;
     position: relative;
     z-index: 9;
 }
@@ -344,11 +345,11 @@ gap: 3vmin;
     margin-top: 6vh;
 }
 .page4{
-    min-height: 100vh;
+    min-height: 110vh;
     width: 100%;
     z-index: 9;
     position: relative;
-    padding: 30vmin 8vmin;
+    padding: 35vmin 8vmin;
 }
 .elem{
     /* background-color: salmon; */
@@ -466,17 +467,12 @@ footer form button{
         border-bottom: 1.5px solid #fff;
     }
     
-    .bigh1{
-        display: none;
+    .page1 h1{
+        padding-left: 20vw;
     }
- 
-    .bigh2{
-        display: none;
+    .page1 h2{
+        left: 13%;
     }
-    .smallh2{
-        padding-top: 5vh;
-    }
-   
     .bigvideo{
         display: none;
     }
