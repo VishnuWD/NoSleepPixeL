@@ -1,5 +1,6 @@
 const loader = document.querySelector(".loader__container")
 const body = document.querySelector("body")
+const a = document.querySelector("a")
 
 window.addEventListener("load", function(){
     loader.style.display ="none"
@@ -13,6 +14,7 @@ function init() {
         smooth: true
     });
     locoScroll.on("scroll", ScrollTrigger.update);
+
 
     ScrollTrigger.scrollerProxy(".main", {
         scrollTop(value) {
@@ -32,6 +34,8 @@ function init() {
 }
 
 init()
+
+
 
 var crsr = document.querySelector(".cursor")
 var main = document.querySelector(".main")
