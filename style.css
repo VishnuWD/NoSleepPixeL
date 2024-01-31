@@ -461,6 +461,8 @@ footer{
     width: 100%;
     background-color: #EDBFFF;
     height: auto;
+    postion:relative;
+    z-index:9;
 }
 
 
