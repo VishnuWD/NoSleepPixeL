@@ -19,7 +19,7 @@
 html, body {
     height: 100%;
     width: 100%;
-    overflow: auto;
+    /* overflow: hidden; */
     scroll-behavior: smooth;
 }
 .loader__container{
@@ -165,7 +165,7 @@ html, body {
 .main{
     background-color: #0F0D0D;
     cursor: none;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .page1{
@@ -460,7 +460,6 @@ footer{
     min-height: 90vh;
     width: 100%;
     background-color: #EDBFFF;
-    height: auto;
 }
 
 
@@ -469,9 +468,9 @@ footer{
     .cursor{
         display: none;
     }
-    /* #loader{
+    #loader{
         display: none;
-    } */
+    }
     .page1{
         padding: 18vh 0;
     }
