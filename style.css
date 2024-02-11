@@ -22,6 +22,10 @@ html, body {
     /* overflow: hidden; */
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+    display: none;
+}
+
 .loader__container{
     background-color: #0F0D0D;
     height: 100vh;
@@ -155,7 +159,7 @@ html, body {
     border-radius: 50%;
     position: fixed;
     background-color: #EDBFFF;
-    z-index: 8;
+    z-index: 99;
     transition: background-image ease 0.5s;
     background-position: center;
     background-size:cover ;
@@ -165,7 +169,7 @@ html, body {
 .main{
     background-color: #0F0D0D;
     cursor: none;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .page1{
@@ -457,7 +461,7 @@ gap: 3vmin;
 }
 
 footer{
-    min-height: 90vh;
+    height: 90vh;
     width: 100%;
     background-color: #EDBFFF;
 }
@@ -584,7 +588,7 @@ footer{
  .page4{
     min-height: 40vh;
     width: 100%;
-    z-index: 9;
+    /* z-index: 9; */
     position: relative;
     padding: 30vmin 8vmin;
 }
@@ -625,7 +629,7 @@ footer{
         min-height: 100vh;
         width: 100%;
         position: relative;
-        z-index: 9;
+        /* z-index: 9; */
         padding: 10vh 7vw;
     }
     .page5 h2{
