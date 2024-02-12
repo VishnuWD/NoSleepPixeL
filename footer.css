@@ -40,18 +40,13 @@ footer a {
 footer a:hover {
   border-bottom: 1px solid var(--dark);
 }
-footer ul {
-  list-style-type: none;
-  padding: 0;
-}
+
 footer button {
   appearance: none;
   border: 0;
   background: transparent;
 }
-footer .flex {
-  display: flex;
-}
+
 
 footer .footer_inner {
   background: var(--light);
@@ -117,12 +112,43 @@ footer input::placeholder {
 footer form {
   position: relative;
 }
-footer svg {
-  margin: 0.5rem;
-}
-footer .c-2 {
-  margin-top: 3.5rem;
-}
+ 
 footer .footer_copyright {
   color: var(--light);
+}
+
+.contactLinks{
+  display: flex;
+  flex-direction: column;
+  gap: 2vmin;
+}
+
+.contactLinks h2{
+  color: var(--dark);
+  font-size: 4.5vmin;
+  text-decoration: underline;
+
+}
+.footer_qr img{
+  height: 30vmin;
+}
+.footer_qr h2{
+  word-wrap: wrap;
+  color: var(--dark);
+  text-align: center;
+  font-size: 3vmin;
+}
+.footer_insta{
+  font-size: 3vmin;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.footer_insta svg{
+  height: 3.5vmin;
+  margin-right: 2vmin;
+}
+.layout{
+  display: flex;
+  justify-content: space-between;
 }
