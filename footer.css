@@ -10,7 +10,7 @@
 }
 footer {
     mix-blend-mode: difference;
-    height: 90vh;
+    height: fit-content;
     display: flex;
     align-items: center;
   color: var(--dark);
@@ -23,7 +23,7 @@ footer h4{
 
 footer h3 {
   font-family: "Noto Serif Display", serif;
-  font-size: 2.3rem;
+  font-size: 7vmin;
   font-weight: 300;
   text-align: center;
   color: var(--dark);
@@ -85,7 +85,7 @@ footer input {
   transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   border-radius: 0;
   width: 100%;
-  font-size: 1.05rem;
+  font-size: 5vmin;
   color: var(--dark);
 
   font-weight: bolder;
@@ -96,19 +96,8 @@ footer input:focus {
 footer input::placeholder {
   color: var(--dark);
 }
-@media (min-width: 675px) {
-    footer .layout {
-    display: flex;
-    flex-wrap: nowrap;
-    column-gap: 2rem;
-  }
-  footer .w-50 {
-    width: 50%;
-  }
-  footer .w-25 {
-    width: 25%;
-  }
-}
+
+
 footer form {
   position: relative;
 }
@@ -120,35 +109,91 @@ footer .footer_copyright {
 .contactLinks{
   display: flex;
   flex-direction: column;
-  gap: 2vmin;
+  gap: 5.5vmin;
 }
 
 .contactLinks h2{
   color: var(--dark);
-  font-size: 4.5vmin;
+  font-size: 8vmin;
   text-decoration: underline;
 
 }
 .footer_qr img{
-  height: 30vmin;
+  height: 50vw;
+  transform: translateX(25%);
 }
 .footer_qr h2{
   word-wrap: wrap;
   color: var(--dark);
   text-align: center;
-  font-size: 3vmin;
+  font-size: 5vmin;
 }
 .footer_insta{
-  font-size: 3vmin;
+  font-size: 7vmin;
   font-weight: 500;
   display: flex;
   align-items: center;
 }
 .footer_insta svg{
-  height: 3.5vmin;
+  height: 7.5vmin;
   margin-right: 2vmin;
 }
 .layout{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 8vh;
 }
+
+@media (min-width: 675px) {
+  footer {
+    height: 90vh;
+}
+    footer .layout {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+    flex-direction: row;
+  }
+  footer .w-50 {
+    width: 50%;
+  }
+  footer .w-25 {
+    width: 25%;
+  }
+  .footer_qr img{
+    height: 30vmin;
+  }
+
+  footer h3 {
+    font-size: 5vmin;
+  }
+  footer input {
+    font-size: 2.5vmin;
+  }
+  .contactLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 3vmin;
+  }
+  
+  .contactLinks h2{
+    font-size: 4vmin;
+  }
+  .footer_qr img{
+    height: 15vw;
+  transform: translateX(0%);
+
+  }
+  .footer_qr h2{
+    font-size: 3vmin;
+  }
+  .footer_insta{
+    font-size: 3.5vmin;
+  }
+  .footer_insta svg{
+    height: 4vmin;
+  }
+
+}
+
