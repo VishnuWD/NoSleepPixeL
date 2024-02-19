@@ -75,7 +75,19 @@ tl3.to(".main", {
 
 
 
-
+function shareUrl() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Check out this website!',
+        text: 'I found this interesting website and thought you might like it.',
+        url: window.location.href
+      })
+      .then(() => alert('Successfully shared'))
+      .catch((error) => alert('Error sharing:', error));
+    } else {
+      alert("Web Share API not supported. You can manually copy the URL to share.");
+    }
+  }
 
 
 // var boxes = document.querySelectorAll(".box")

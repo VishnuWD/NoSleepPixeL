@@ -1,22 +1,25 @@
 @font-face {
-    font-family: "PP mori";
-    src: url(fonts/ppmori.ttf);
+  font-family: "PP mori";
+  src: url(fonts/ppmori.ttf);
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
 
 :root {
   --light: #ffffff;
   --dark: #000;
 }
+
 footer {
-    mix-blend-mode: difference;
-    height: fit-content;
-    display: flex;
-    align-items: center;
+  mix-blend-mode: difference;
+  height: fit-content;
+  display: flex;
+  align-items: center;
   color: var(--dark);
 
 }
-footer h4{
+
+footer h4 {
   color: var(--dark);
 
 }
@@ -28,6 +31,7 @@ footer h3 {
   text-align: center;
   color: var(--dark);
 }
+
 footer a {
   text-decoration: none;
   color: var(--dark);
@@ -37,6 +41,7 @@ footer a {
   margin-bottom: 0.5rem;
   display: inline-flex;
 }
+
 footer a:hover {
   border-bottom: 1px solid var(--dark);
 }
@@ -56,12 +61,14 @@ footer .footer_inner {
   padding: 2rem;
   margin: 1rem 0;
 }
+
 footer .footer {
   position: relative;
   display: flex;
   align-items: center;
   min-height: 100vh;
 }
+
 footer .container {
   max-width: 1200px;
   width: 100%;
@@ -90,9 +97,11 @@ footer input {
 
   font-weight: bolder;
 }
+
 footer input:focus {
   outline: none;
 }
+
 footer input::placeholder {
   color: var(--dark);
 }
@@ -101,99 +110,138 @@ footer input::placeholder {
 footer form {
   position: relative;
 }
- 
+
 footer .footer_copyright {
   color: var(--light);
 }
 
-.contactLinks{
+.contactLinks {
   display: flex;
   flex-direction: column;
   gap: 5.5vmin;
 }
 
-.contactLinks h2{
+.contactLinks h2 {
   color: var(--dark);
   font-size: 8vmin;
   text-decoration: underline;
 
 }
-.footer_qr img{
+
+.footer_qr img {
   height: 50vw;
   transform: translateX(25%);
 }
-.footer_qr h2{
+
+.footer_qr h2 {
   word-wrap: wrap;
   color: var(--dark);
   text-align: center;
   font-size: 5vmin;
 }
-.footer_insta{
+
+.footer_insta {
   font-size: 7vmin;
   font-weight: 500;
   display: flex;
   align-items: center;
 }
-.footer_insta svg{
+
+.footer_insta svg {
   height: 7.5vmin;
   margin-right: 2vmin;
 }
-.layout{
+
+.layout {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 8vh;
 }
 
+.footer_share {
+  font-size: 6vmin;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  /* mix-blend-mode: difference; */
+  color: #000;
+}
+
+.footer_share svg {
+  height: 7.5vmin;
+  width: 7.5vmin;
+  margin-right: 2vmin;
+}
+
 @media (min-width: 675px) {
   footer {
     height: 90vh;
-}
-    footer .layout {
+  }
+
+  footer .layout {
     display: flex;
     flex-wrap: nowrap;
     column-gap: 2rem;
     flex-direction: row;
   }
+
   footer .w-50 {
     width: 50%;
   }
+
   footer .w-25 {
     width: 25%;
   }
-  .footer_qr img{
+
+  .footer_qr img {
     height: 30vmin;
   }
 
   footer h3 {
     font-size: 5vmin;
   }
+
   footer input {
     font-size: 2.5vmin;
   }
-  .contactLinks{
+
+  .contactLinks {
     display: flex;
     flex-direction: column;
     gap: 3vmin;
   }
-  
-  .contactLinks h2{
+
+  .contactLinks h2 {
     font-size: 4vmin;
   }
-  .footer_qr img{
+
+  .footer_qr img {
     height: 15vw;
-  transform: translateX(0%);
+    transform: translateX(0%);
 
   }
-  .footer_qr h2{
+
+  .footer_qr h2 {
     font-size: 3vmin;
   }
-  .footer_insta{
+
+  .footer_insta {
     font-size: 3.5vmin;
   }
-  .footer_insta svg{
+
+  .footer_insta svg {
     height: 4vmin;
   }
 
-}
+  .footer_share {
+    font-size: 3.5vmin;
+  }
 
+  .footer_share svg {
+    height: 4vmin;
+    width: 4vmin;
+
+  }
+
+}
