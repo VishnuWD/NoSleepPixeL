@@ -6,8 +6,7 @@ window.addEventListener("load", function () {
     loader.style.display = "none"
 })
 
-window.addEventListener("blur", () => document.querySelector("title").text = "NS Pixel ~ See you 👋")
-window.addEventListener("focus", () => document.querySelector("title").text = "NS Pixel ~ Creative Web Design Team")
+
 
 var crsr = document.querySelector(".cursor")
 var main = document.querySelector(".main")
@@ -89,34 +88,3 @@ function shareUrl() {
     }
   }
 
-
-// var boxes = document.querySelectorAll(".box")
-// boxes.forEach(function(elem){
-//     elem.addEventListener("mouseenter",function(){
-//         var att = elem.getAttribute("data-image")
-//         crsr.style.width = "470px"
-//         crsr.style.height = "370px"
-//         crsr.style.borderRadius = "0"
-//         crsr.style.backgroundImage = `url(${att})`
-//     })
-//     elem.addEventListener("mouseleave",function(){
-//         elem.style.backgroundColor = "transparent"
-//         crsr.style.width = "20px"
-//         crsr.style.height = "20px"
-//         crsr.style.borderRadius = "50%"
-//         crsr.style.backgroundImage = `none`
-//     })
-// })
-
-var h4 = document.querySelectorAll("#nav h4")
-var purple = document.querySelector("#purple")
-h4.forEach(function (elem) {
-    elem.addEventListener("mouseenter", function () {
-        purple.style.display = "block"
-        purple.style.opacity = "1"
-    })
-    elem.addEventListener("mouseleave", function () {
-        purple.style.display = "none"
-        purple.style.opacity = "0"
-    })
-})
