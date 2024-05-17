@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image";
-import Header from "./Header";
 import Loading from "./Loading";
 import Curser from "./Curser";
 import { gsap } from "gsap";
@@ -76,7 +75,6 @@ export default function Home() {
   }, [])
 
 
-  // useEffect(() => {
   function shareUrl() {
     if (navigator.share) {
       navigator.share({
@@ -91,18 +89,12 @@ export default function Home() {
     }
   }
 
-  // }, [])
-
-
-
-
 
   return (
     <>
 
       <Loading />
       <Curser />
-      <Header />
 
       <main className="main">
         <header className="page1">

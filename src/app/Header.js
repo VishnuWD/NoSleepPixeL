@@ -3,7 +3,6 @@ import React from 'react'
 function Header() {
   return (
     <>
-      <div className="cursor"></div>
       <nav id="nav">
         <h2>NS Pixel<p>🌙</p></h2>
 
