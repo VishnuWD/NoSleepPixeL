@@ -3,7 +3,7 @@ export default function robots() {
       rules: {
         userAgent: '*',
         allow: '/',
-        disallow: '',
+        disallow: '/private/',
       },
       sitemap: 'https://nosleeppixel.online/sitemap.xml',
     }
