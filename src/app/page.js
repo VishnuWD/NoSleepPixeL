@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import Link from "next/link";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -69,6 +70,21 @@ export default function Home() {
       backgroundColor: "#0F0D0D"
     })
 
+    var tl4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".page1 h1",
+        scroller: "body",
+        // markers:true,
+        start: "top -105%",
+        end: "top -115%",
+        scrub: 3
+      }
+    })
+
+    tl4.to("#nav", {
+      backgroundColor: "#0F0D0D"
+    })
+
     // return () => {
     //   second
     // }
@@ -97,11 +113,12 @@ export default function Home() {
       <Curser />
 
       <main className="main">
+        <p className="fixed right-0 top-1/3 origin-bottom-right -rotate-90 bg-[#EDBFFF] px-5 py-3 rounded-[20px_20px_0_0] text-[#0F0D0D] font-extrabold text-[2vmin] z-[500] border-[#0F0D0D] border-2 border-b-0">Under Development 🚧</p>
         <header className="page1">
 
           <h1 className="bigh1">Code, Design,</h1>
           <h2 className="bigh2">Delight, & Deliver.</h2>
-          <p>We make your website look really cool and functional</p>
+          <p>We create websites that are attractive and easy to use.</p>
           <video autoPlay muted loop src="/media/bgbig.webm"></video>
 
         </header>

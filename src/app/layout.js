@@ -15,7 +15,7 @@ export const metadata = {
     canonical: "https://www.nosleeppixel.online/",
   },
   openGraph: {
-    title: 'NoSleepPixel | Creative Web Design & Development Solutionsg',
+    title: 'NoSleepPixel | Creative Web Design & Development Solutions',
     description: "Unleash your website's potential with NoSleepPixel's creative collective. Explore our services in web design, e-commerce, personal websites, and more.",
     image: "media/design1.webp",
     url: "https://www.nosleeppixel.online/",
