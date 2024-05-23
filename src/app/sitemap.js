@@ -3,6 +3,8 @@ export default function sitemap() {
       {
         url: 'https://nosleeppixel.online',
         lastModified: new Date(),
+        changeFrequency: 'weekly',
+      priority: 1,
       },
     //   {
     //     url: 'https://acme.com/about',
