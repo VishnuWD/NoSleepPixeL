@@ -11,6 +11,9 @@ export const metadata = {
   keywords: "NoSleepPixel, web design, front-end solutions, responsive design, e-commerce, personal websites, business ads, digital experiences, creative collective, web development, user-friendly websites, digital services, website support, mobile-friendly websites, no sleep pixel",
   canonical: "https://www.nosleeppixel.online/",
   author: "NoSleepPixel Team",
+  verification: {
+    google: "iqBZlpB1PVOiVBbSRjWupbw6Ey4nZHfWln_nXYvVVuI",
+  },
   alternates: {
     canonical: "https://www.nosleeppixel.online/",
   },
