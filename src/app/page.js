@@ -16,14 +16,14 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
 
   useEffect(() => {
-    gsap.from(".page1 h1,.page1 h2", {
+    gsap.from(".page1 h2,.page1 h3", {
       // y: 10,
       // delay: 0.3,
       // duration: 0.1
     })
     var tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".page1 h1",
+        trigger: ".page1 h2",
         scroller: "body",
         // markers:true,
         start: "top 30%",
@@ -31,10 +31,10 @@ export default function Home() {
         scrub: 3
       }
     })
-    tl.to(".page1 h1", {
+    tl.to(".page1 h2", {
       x: -100,
     }, "anim")
-    tl.to(".page1 h2", {
+    tl.to(".page1 h3", {
       x: 100
     }, "anim")
     tl.to(".page1 video", {
@@ -43,7 +43,7 @@ export default function Home() {
 
     var tl2 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".page1 h1",
+        trigger: ".page1 h2",
         scroller: "body",
         // markers:true,
         start: "top -105%",
@@ -57,7 +57,7 @@ export default function Home() {
 
     var tl3 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".page1 h1",
+        trigger: ".page1 h2",
         scroller: "body",
         // markers:true,
         start: "top -280%",
@@ -72,7 +72,7 @@ export default function Home() {
 
     var tl4 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".page1 h1",
+        trigger: ".page1 h2",
         scroller: "body",
         // markers:true,
         start: "top -105%",
@@ -116,8 +116,8 @@ export default function Home() {
         <p className="fixed right-0 top-1/3 origin-bottom-right -rotate-90 bg-[#EDBFFF] px-5 py-3 rounded-[20px_20px_0_0] text-[#0F0D0D] font-extrabold text-[2vmin] z-[500] border-[#0F0D0D] border-2 border-b-0">Under Development 🚧</p>
         <header className="page1">
 
-          <h1 className="bigh1">Code, Design,</h1>
-          <h2 className="bigh2">Delight, & Deliver.</h2>
+          <h2 className="bigh1">Code, Design,</h2>
+          <h3 className="bigh2">Delight, & Deliver.</h3>
           <p>We create websites that are attractive and easy to use.</p>
           <video autoPlay muted loop src="/media/bgbig.webm"></video>
 
@@ -134,9 +134,9 @@ export default function Home() {
               </h3>
             </div>
             <div className="page2-right">
-              <p>We blend strategic vision with creative finesse, crafting compelling digital experiences. Our
-                tailored approach brings Eye-Catching web design and Responsive Front-end Solutions to life,
-                born in IN - Serving clients globally</p>
+              <h1>We blend strategic vision with creative finesse, crafting compelling digital experiences. Our
+                tailored approach brings Eye-Catching web design and Responsive Web Solutions to life,
+                born in IN - Serving clients globally</h1>
               <button>About us</button>
             </div>
           </div>
@@ -144,13 +144,13 @@ export default function Home() {
         </div>
         <div className="page3">
 
-          <h1>We work on many things</h1>
+          <h2>We work on many things</h2>
 
 
           <div className="page3-part1">
             <div>
 
-              <Image height={350} width={350} src="/media/ecom.jpg" alt="" />
+              <Image height={350} width={350} src="/media/ecom.jpg" alt="showing an e-commerece website example image" />
               <h3>E-Commerce</h3>
             </div>
 
@@ -165,7 +165,7 @@ export default function Home() {
             <div>
               <Image height={250} width={500}
                 src="/media/personalsite.webp"
-                alt="" />
+                alt="showing a personal website example image" />
               <h3>Personal Website & Portfolios</h3>
 
             </div>
@@ -180,28 +180,28 @@ export default function Home() {
         </div>
         <section className="page4">
           <div className="elem elem1">
-            <Image height={350} width={350} src="/media/design1.webp" alt="" />
+            <Image height={350} width={350} src="/media/design1.webp" alt="showing an image of a designing tablet where it shows the wireframe of an application website" />
             <div className="text-div">
-              <h1>Design</h1>
-              <h1>Design</h1>
+              <h2>Design</h2>
+              <h2>Design</h2>
             </div>
-            <Image height={150} width={150} src="/media/design 2.webp" alt="" />
+            <Image height={150} width={150} src="/media/design 2.webp" alt="An Image of guy looking at the screen where he is designing a website" />
           </div>
           <div className="elem">
-            <Image height={150} width={150} src="/media/frontend 1.webp" alt="" />
+            <Image height={150} width={150} src="/media/frontend 1.webp" alt="An Image of computer screeens where there is frontend development like css and other things" />
             <div className="text-div">
-              <h1>Frontend</h1>
-              <h1>Frontend</h1>
+              <h2>Frontend</h2>
+              <h2>Frontend</h2>
             </div>
-            <Image height={150} width={150} src="/media/frontend 2.webp" alt="" />
+            <Image height={150} width={150} src="/media/frontend 2.webp" alt="the image represents a guy making a website in his laptop" />
           </div>
           <div className="elem">
-            <Image height={150} width={150} src="/media/backend 2.webp" alt="" />
+            <Image height={150} width={150} src="/media/backend 2.webp" alt="Image shows there is a lot of backend code and javascript" />
             <div className="text-div">
-              <h1>Backend</h1>
-              <h1>Backend</h1>
+              <h2>Backend</h2>
+              <h2>Backend</h2>
             </div>
-            <Image height={150} width={150} src="/media/backend 1.webp" alt="" />
+            <Image height={150} width={150} src="/media/backend 1.webp" alt="Image shows a person coding a full stack website using different technologies and frameworks" />
           </div>
         </section>
         <section id="types" className="page5">
@@ -279,7 +279,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="footer_qr">
-                  <Image height={150} width={150} src="/media/qr.png" alt="qr code for the no sleep pixel website" />
+                  <Image height={150} width={150} src="/media/qr.png" alt="Image shows a qr code which is used to scan to use the no sleep pixel website in a different device" />
                   <h2>Scan to open <br /> in different device</h2>
                 </div>
 
