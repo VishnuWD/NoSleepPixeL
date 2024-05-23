@@ -536,7 +536,7 @@ a {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     .cursor {
         display: none;
     }
@@ -700,8 +700,8 @@ a {
     }
 
     .elem h1 {
-        font-size: 16.5vw;
-        height: 15vh;
+        font-size: 17vw;
+        height: 17vh;
         font-weight: 600;
         transition: all ease-out 0.5s;
         /* line-height: 105%; */
@@ -878,7 +878,8 @@ footer .footer_copyright {
   height: 50vmin;
   width: auto;
 
-  /* transform: translateX(25%); */
+
+  transform: translateX(25%);
 }
 
 .footer_qr h2 {
