@@ -150,7 +150,7 @@ export default function Home() {
           <div className="page3-part1">
             <div>
 
-              <Image height={350} width={350} src="/media/ecom.jpg" alt="showing an e-commerece website example image" />
+              <Image height={350} width={350} src="/media/ecom.jpg" title="E-commerece" alt="showing an e-commerece website example image" />
               <h3>E-Commerce</h3>
             </div>
 
@@ -164,7 +164,7 @@ export default function Home() {
           <div className="page3-part2">
             <div>
               <Image height={250} width={500}
-                src="/media/personalsite.webp"
+                src="/media/personalsite.webp" title="Personal Website"
                 alt="showing a personal website example image" />
               <h3>Personal Website & Portfolios</h3>
 
@@ -180,28 +180,28 @@ export default function Home() {
         </div>
         <section className="page4">
           <div className="elem elem1">
-            <Image height={350} width={350} src="/media/design1.webp" alt="showing an image of a designing tablet where it shows the wireframe of an application website" />
+            <Image height={350} width={350} src="/media/design1.webp" title="wireframe design" alt="showing an image of a designing tablet where it shows the wireframe of an application website" />
             <div className="text-div">
               <h2>Design</h2>
               <h2>Design</h2>
             </div>
-            <Image height={150} width={150} src="/media/design 2.webp" alt="An Image of guy looking at the screen where he is designing a website" />
+            <Image height={150} width={150} src="/media/design 2.webp" title="web designing UI/UX" alt="An Image of guy looking at the screen where he is designing a website" />
           </div>
           <div className="elem">
-            <Image height={150} width={150} src="/media/frontend 1.webp" alt="An Image of computer screeens where there is frontend development like css and other things" />
+            <Image height={150} width={150} src="/media/frontend 1.webp" title="Frontend code" alt="An Image of computer screeens where there is frontend development like css and other things" />
             <div className="text-div">
               <h2>Frontend</h2>
               <h2>Frontend</h2>
             </div>
-            <Image height={150} width={150} src="/media/frontend 2.webp" alt="the image represents a guy making a website in his laptop" />
+            <Image height={150} width={150} src="/media/frontend 2.webp" title="Making a Webiste" alt="the image represents a guy making a website in his laptop" />
           </div>
           <div className="elem">
-            <Image height={150} width={150} src="/media/backend 2.webp" alt="Image shows there is a lot of backend code and javascript" />
+            <Image height={150} width={150} src="/media/backend 2.webp" title="Backend code" alt="Image shows there is a lot of backend code and javascript" />
             <div className="text-div">
               <h2>Backend</h2>
               <h2>Backend</h2>
             </div>
-            <Image height={150} width={150} src="/media/backend 1.webp" alt="Image shows a person coding a full stack website using different technologies and frameworks" />
+            <Image height={150} width={150} src="/media/backend 1.webp" title="full stack website" alt="Image shows a person coding a full stack website using different technologies and frameworks" />
           </div>
         </section>
         <section id="types" className="page5">
@@ -279,7 +279,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="footer_qr">
-                  <Image height={150} width={150} src="/media/qr.png" alt="Image shows a qr code which is used to scan to use the no sleep pixel website in a different device" />
+                  <Image height={150} width={150} src="/media/qr.png" title="QR Code to Scan" alt="Image shows a qr code which is used to scan to use the no sleep pixel website in a different device" />
                   <h2>Scan to open <br /> in different device</h2>
                 </div>
 
