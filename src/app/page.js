@@ -8,6 +8,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import Link from "next/link";
+import Technolgies from "./components/Technologies";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -178,6 +179,9 @@ export default function Home() {
           </div>
 
         </div>
+
+        <Technolgies/>
+
         <section className="page4">
           <div className="elem elem1">
             <Image height={350} width={350} src="/media/design1.webp" title="wireframe design" alt="showing an image of a designing tablet where it shows the wireframe of an application website" />
@@ -204,7 +208,8 @@ export default function Home() {
             <Image height={150} width={150} src="/media/backend 1.webp" title="full stack website" alt="Image shows a person coding a full stack website using different technologies and frameworks" />
           </div>
         </section>
-        <section id="types" className="page5">
+
+        <article id="types" className="page5">
           <h2>Common Questions</h2>
           <details className="box">
             <summary>Will I be able to update the content on my website easily?</summary>
@@ -235,7 +240,7 @@ export default function Home() {
               such as smartphones, tablets, and desktops. This ensures that your website provides a seamless user experience
               across different screen sizes.</p>
           </details>
-        </section>
+        </article>
         <footer id="FOOTER" className="footer">
 
 
