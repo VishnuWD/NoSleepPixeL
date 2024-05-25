@@ -30,6 +30,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
+      </head>
       <body className={inter.className} suppressHydrationWarning={true}>
         <Header/>
         {children}</body>

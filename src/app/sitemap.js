@@ -1,7 +1,7 @@
 export default function sitemap() {
     return [
       {
-        url: 'https://www.nosleeppixel.online',
+        url: 'https://www.nosleeppixel.online/',
         lastModified: new Date(),
         changeFrequency: 'weekly',
       priority: 1,

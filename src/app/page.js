@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import Link from "next/link";
 import Technolgies from "./components/Technologies";
+import SchedulingButton from "./components/sub components/SchedulingButton";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -180,7 +181,7 @@ export default function Home() {
 
         </div>
 
-        <Technolgies/>
+        <Technolgies />
 
         <section className="page4">
           <div className="elem elem1">
@@ -259,15 +260,8 @@ export default function Home() {
 
                 <div className="contactLinks">
                   <h2>Contact</h2>
-                  <form action="mailto:nosleeppixel@gmail.com" method="post" encType="text/plain">
-                    <input type="email" placeholder="Email Address" name="Mail" />
-                    <button>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-                      </svg>
-                    </button>
-                  </form>
+                  <SchedulingButton/>
+                  <Link target="_blank" className="text-[6vmin] md:text-[3vmin]" href="mailto:nosleeppixel@gmail.com">nosleeppixel@gmail.com</Link>
                   <a className="footer_insta" href="https://www.instagram.com/nosleeppixel" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2476 2476" id="instagram">
                       <path

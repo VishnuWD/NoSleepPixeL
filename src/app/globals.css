@@ -18,7 +18,7 @@
     box-sizing: border-box;
     font-family: PP mori, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
-    cursor: none;
+    /* cursor: none; */
 }
 
 html,
@@ -27,6 +27,7 @@ body {
     width: 100%;
     /* overflow: hidden; */
     scroll-behavior: smooth;
+    cursor: none;
 }
 
 ::-webkit-scrollbar {
@@ -822,40 +823,6 @@ footer .container {
   padding: 0 1rem;
 }
 
-footer form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: min(100%, 400px);
-  border-bottom: 1px solid var(--dark);
-}
-
-footer input {
-  padding: 0.75rem 0;
-  border: none;
-  background: none;
-  font-weight: 500;
-  transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  border-radius: 0;
-  width: 100%;
-  font-size: 5vmin;
-  color: var(--dark);
-
-  font-weight: bolder;
-}
-
-footer input:focus {
-  outline: none;
-}
-
-footer input::placeholder {
-  color: var(--dark);
-}
-
-
-footer form {
-  position: relative;
-}
 
 footer .footer_copyright {
   color: var(--light);
@@ -864,7 +831,7 @@ footer .footer_copyright {
 .contactLinks {
   display: flex;
   flex-direction: column;
-  gap: 5.5vmin;
+  gap: 5vmin;
 }
 
 .contactLinks h2 {
@@ -872,6 +839,10 @@ footer .footer_copyright {
   font-size: 8vmin;
   text-decoration: underline;
 
+}
+
+.contactLinks button{
+    @apply py-[2.5vmin] my-[2vmin] hover:text-[#EDBFFF]
 }
 
 .footer_qr img {
@@ -888,6 +859,12 @@ footer .footer_copyright {
   text-align: center;
   font-size: 5vmin;
 }
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8vh;
+}
 
 .footer_insta {
   font-size: 7vmin;
@@ -897,29 +874,22 @@ footer .footer_copyright {
 }
 
 .footer_insta svg {
-  height: 7.5vmin;
+  height: 7vmin;
   margin-right: 2vmin;
 }
 
-.layout {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 8vh;
-}
-
 .footer_share {
-  font-size: 6vmin;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  /* mix-blend-mode: difference; */
-  color: #000;
-}
+    color: var(--dark);
+    font-size: 7vmin;
+    font-weight: 500;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+  }
+
 
 .footer_share svg {
-  height: 7.5vmin;
-  width: 7.5vmin;
+  height: 8vmin;
   margin-right: 2vmin;
 }
 
@@ -958,7 +928,7 @@ footer .footer_copyright {
   .contactLinks {
     display: flex;
     flex-direction: column;
-    gap: 3vmin;
+    gap: 1vmin;
   }
 
   .contactLinks h2 {
@@ -976,20 +946,19 @@ footer .footer_copyright {
   }
 
   .footer_insta {
-    font-size: 3.5vmin;
+    font-size: 3vmin;
   }
 
   .footer_insta svg {
-    height: 4vmin;
+    height: 3.5vmin;
   }
 
   .footer_share {
-    font-size: 3.5vmin;
+    font-size: 3vmin;
   }
 
   .footer_share svg {
     height: 4vmin;
-    width: 4vmin;
 
   }
 
