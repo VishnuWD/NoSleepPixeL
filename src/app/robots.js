@@ -5,6 +5,6 @@ export default function robots() {
         allow: '/',
         disallow: '/private/',
       },
-      sitemap: 'https://nosleeppixel.online/sitemap.xml',
+      sitemap: 'https://www.nosleeppixel.online/sitemap.xml',
     }
   }

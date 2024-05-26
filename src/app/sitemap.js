@@ -3,20 +3,20 @@ export default function sitemap() {
       {
         url: 'https://www.nosleeppixel.online/',
         lastModified: new Date(),
-        changeFrequency: 'weekly',
+        changeFrequency: 'daily',
       priority: 1,
       },
-    //   {
-    //     url: 'https://acme.com/about',
-    //     lastModified: new Date(),
-    //     changeFrequency: 'monthly',
-    //     priority: 0.8,
-    //   },
-    //   {
-    //     url: 'https://acme.com/blog',
-    //     lastModified: new Date(),
-    //     changeFrequency: 'weekly',
-    //     priority: 0.5,
-    //   },
+      {
+        url: 'https://www.nosleeppixel.online/about',
+        lastModified: new Date(),
+        changeFrequency: 'daily',
+        priority: 0.8,
+      },
+      {
+        url: 'https://www.nosleeppixel.online/business',
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.5,
+      },
     ]
   }

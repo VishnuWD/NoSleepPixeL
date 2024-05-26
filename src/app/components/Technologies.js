@@ -13,6 +13,7 @@ export default function Technologies() {
         <Icons name={"Next.js"} />
         <Icons name={"Bootstrap"} />
         <Icons name={"Tailwind CSS"} />
+        <Icons name={"GSAP"} />
         <Icons name={"Styled Components"}/>
         <Icons name={"Node.js"} />
         <Icons name={"Express.js"}/>

@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image";
-import Loading from "./Loading";
-import Curser from "./Curser";
+import Loading from "./components/Loading";
+import Curser from "./components/Curser";
 import { gsap } from "gsap";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
