@@ -20,7 +20,7 @@ function Loading() {
   }, []);
 
   return (
-    <div className="loader__container">
+    <div className="loader__container hidden md:block">
       <div className="loader"></div>
       <div className="loader"></div>
       <div className="loader"></div>

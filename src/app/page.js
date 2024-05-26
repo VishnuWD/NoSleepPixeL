@@ -4,7 +4,6 @@ import Image from "next/image";
 import Loading from "./components/Loading";
 import Curser from "./components/Curser";
 import { gsap } from "gsap";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import Link from "next/link";
