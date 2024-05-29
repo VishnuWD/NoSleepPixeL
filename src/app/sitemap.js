@@ -13,10 +13,10 @@ export default function sitemap() {
         priority: 0.8,
       },
       {
-        url: 'https://www.nosleeppixel.online/business',
+        url: 'https://www.nosleeppixel.online/maintenance',
         lastModified: new Date(),
         changeFrequency: 'weekly',
-        priority: 0.5,
+        priority: 0.8,
       },
     ]
   }

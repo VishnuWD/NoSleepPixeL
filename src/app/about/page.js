@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div className='bg-slate-950'>wworks?</div>
+    <div className='h-screen bg-[#0F0D0D] '>test</div>
   )
 }
 

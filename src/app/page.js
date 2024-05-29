@@ -110,11 +110,8 @@ export default function Home() {
   return (
     <>
 
-      <Loading />
-      <Curser />
-
+      {/* <Loading /> */}
       <main className="main">
-        <p className="fixed right-0 top-1/3 origin-bottom-right -rotate-90 bg-[#EDBFFF] px-5 py-3 rounded-[20px_20px_0_0] text-[#0F0D0D] font-extrabold text-[2vmin] z-[500] border-[#0F0D0D] border-2 border-b-0">Under Development 🚧</p>
         <header className="page1">
 
           <h2 className="bigh1">Code, Design,</h2>

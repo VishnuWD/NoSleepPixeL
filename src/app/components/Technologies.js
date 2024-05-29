@@ -11,6 +11,7 @@ export default function Technologies() {
         <Icons name={"JavaScript"} />
         <Icons name={"React.js"}/>
         <Icons name={"Next.js"} />
+        <Icons name={"EJS"} />
         <Icons name={"Bootstrap"} />
         <Icons name={"Tailwind CSS"} />
         <Icons name={"GSAP"} />

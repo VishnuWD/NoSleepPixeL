@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import Curser from "./components/Curser";
+import Loading from "./components/Loading";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -35,6 +37,9 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className} suppressHydrationWarning={true}>
         <Header/>
+        <Curser/>
+        <Loading/>
+        <p className="fixed right-0 top-1/3 origin-bottom-right -rotate-90 bg-[#EDBFFF] px-5 py-3 rounded-[20px_20px_0_0] text-[#0F0D0D] font-extrabold text-[2vmin] z-[500] border-[#0F0D0D] border-2 border-b-0">Under Development 🚧</p>
         {children}</body>
     </html>
   );

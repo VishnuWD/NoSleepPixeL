@@ -36,9 +36,9 @@ window.addEventListener('scroll', function() {
         <div className='nav__list fixed blur-3xl bg-blend-normal hidden h-0 w-0 peer-checked:block left-[-20vw] top-[-10vh] peer-checked:animate-[navList_0.4s_forwards] z-20 bg-[#EDBFFF] rounded-[0_0_500px_30px]'>
           <p>something</p>
         </div>
-        <h2 className='z-30'>NS Pixel<p>🌙</p></h2>
+        <a href="/"><h2 className='z-30'>NS Pixel<p>🌙</p></h2></a>
 
-        <a className='z-30' href="#FOOTER">
+        <a className='z-30' href="/#FOOTER">
           <h4>Contact</h4>
         </a>
       </nav>
