@@ -32,10 +32,10 @@ function Header() {
     <>
       <nav id="nav">
         <input className='peer hidden' type="checkbox" name="" id="check" />
-        <label htmlFor="check" className='z-30 cursor-pointer'>
-          <div className='bg-white w-[5vmin] h-[2px] mb-1'></div>
-          <div className='bg-white w-[7.7vmin] h-[2px] mb-1'></div>
-          <div className='bg-white w-[11vmin] h-[2px] mb-1'></div>
+        <label htmlFor="check" className='z-30 cursor-pointer '>
+          <div className='bg-white w-[35px] h-[2px] mb-1'></div>
+          <div className='bg-white w-[53px] h-[2px] mb-1'></div>
+          <div className='bg-white w-[76px] h-[2px] mb-1'></div>
         </label>
 
         <div className='fixed  hidden peer-checked:block left-[5vmin] text-[0vmin] top-[10vmin] select-none shadow-lg rounded-xl  peer-checked:animate-[navList_0.2s_forwards]'>
